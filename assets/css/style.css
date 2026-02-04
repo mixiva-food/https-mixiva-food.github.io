@@ -324,3 +324,37 @@ body {
   text-align: center;
 }
 
+.pagination {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #dbeafe;
+  background: #ffffff;
+  color: #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.pagination button.active {
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.pagination button:hover:not(.active):not(:disabled) {
+  background: #eff6ff;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
